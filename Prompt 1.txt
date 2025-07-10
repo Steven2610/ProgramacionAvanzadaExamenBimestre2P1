@@ -1,0 +1,50 @@
+Prompt 1
+Formatted Date,Summary,Precip Type,Temperature (C),,Humidity,Wind Speed (km/h),Wind Bearing (degrees),Visibility (km),Loud Cover,Pressure (millibars),Daily Summary QUE SON CADA UNA
+Prompt 2
+ayudame a cambiarle   la escala quiero que se muestren todas la categorias solo cambiale la escala a tipo longaritmica  z.show( 
+dfweatherHistory
+.groupBy(col("Summary"))
+.count()
+.orderBy(desc("count"))
+Prompt 3
+Estoy trabajando con un DataFrame de clima llamado dfweatherHistory en Apache Zeppelin, que contiene la columna "Formatted Date" (fecha con hora) y "Temperature (C)".
+
+Quiero obtener la temperatura mínima registrada por día, ordenada cronológicamente, y visualizarla como un gráfico de líneas en Zeppelin.
+
+Por favor, genera el código Scala completo compatible con Zeppelin (usando Spark SQL) que haga lo siguiente:
+
+Convierta "Formatted Date" a timestamp y luego a solo fecha (día).
+
+Agrupe por día y calcule la temperatura mínima.
+
+Ordene los días de forma ascendente.
+
+Use z.show() para mostrar el resultado como tabla y habilitar el gráfico.
+
+También explícame cómo configurar el gráfico en Zeppelin: qué poner en el eje X e Y.
+¡Gracias!
+
+Prompt 4
+
+Estoy trabajando con un DataFrame en Apache Spark llamado dfweatherHistory que contiene una columna "Formatted Date" con fecha y hora, y "Temperature (C)" con la temperatura en grados Celsius.
+
+Quiero crear un análisis en Zeppelin para calcular la temperatura promedio por mes.
+
+Por favor, genera el código Scala completo compatible con Zeppelin que haga lo siguiente:
+
+Convierta "Formatted Date" a tipo timestamp.
+
+Extraiga el año y el mes.
+
+Cree una columna año_mes en formato "yyyy-MM".
+
+Agrupe por año_mes y calcule el promedio de temperatura.
+
+Ordene cronológicamente por año_mes.
+
+Use z.show(...) para mostrar los resultados.
+
+También explícame cómo visualizar el resultado como un gráfico de líneas en Zeppelin
+
+
+también se trabajo con las notas de las clases anteriores
